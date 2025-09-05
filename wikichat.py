@@ -3,7 +3,7 @@ import wikipedia
 from streamlit_mic_recorder import mic_recorder
 
 # Title
-st.title("Simple Python Chatbot with Wikipedia")
+st.title("Simple Python Chatbot with Wikipedia+ 🎤 Voice Input")
 
 # Session state for conversation memory
 if "messages" not in st.session_state:
@@ -52,6 +52,7 @@ if user_input:
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.write(msg["content"])
+
 
 
 
