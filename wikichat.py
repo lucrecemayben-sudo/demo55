@@ -1,5 +1,6 @@
 import streamlit as st
 import wikipedia
+from streamlit_mic_recorder import mic_recorder
 
 # Title
 st.title("Simple Python Chatbot with Wikipedia")
@@ -51,5 +52,6 @@ if user_input:
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.write(msg["content"])
+
 
 
